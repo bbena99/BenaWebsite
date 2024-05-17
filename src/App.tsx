@@ -4,7 +4,6 @@ import { AppRoutes } from './core';
 import { PageLayout } from './pages';
 
 function App() {
-  console.log(AppRoutes)
   return (
     <>
       <BrowserRouter>
