@@ -1,35 +1,60 @@
 import { ReactNode } from "react";
 import { PageProps } from "../core";
-import { Carousel, List } from "flowbite-react";
-import { HomeConstants } from "../constants";
+import { Card, List } from "flowbite-react";
+import { Constants } from "../constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShare } from "@fortawesome/free-solid-svg-icons";
 
 export function HomePage(props?:PageProps):ReactNode{
-  console.log(props)
-  const constants = HomeConstants;
+  console.log(props);
+  const constants = Constants;
   return <>
-    <section id="jumbotron" className="bg-white dark:bg-gray-900">
+    <section id="jumbotron" className="bg-gray-300 dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           {constants.TITLE}
         </h1>
       </div>
     </section>
-    <section id="carousel" className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel>
-        {constants.CAROUSEL_IMGS.map(img=>{
-          return <img src={img.src} alt={img.alt} key={img.alt+"_carousel"}/>
-        })}
-      </Carousel>
-    </section>
-    <section className="max-w-screen-xl w-full flex flex-wrap items-center mx-auto justify-between p-4">
-      <h2 className="max-w-screen-xl w-full flex flex-wrap mx-auto justify-between p-4 self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-        Purpose of this website
-      </h2>
-      <List className="ml-10">
-        <List.Item>Reenforce my knowledge of React frameworks.</List.Item>
-        <List.Item>Try out Tailwind as a css library.</List.Item>
-        <List.Item>Implementing a light/dark mode to a webpage.</List.Item>
-      </List>
+    <section id="carousel" className="grid grid-cols-2 gap-4 justify-items-center [&_div]:my-5">
+      <Card
+        className="max-w-sm drop-shadow-md"
+        imgAlt={constants.PERSONAL_IMGS[0].alt}
+        imgSrc={constants.PERSONAL_IMGS[0].src}
+        onClick={()=>{window.location.href='/AboutMe'}}
+      >
+        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-between">
+          <span>About me</span>
+          <FontAwesomeIcon icon={faShare}/>
+        </h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">
+          Learn more about me, and how I learned programming.
+        </p>
+      </Card>
+      <Card
+        className="max-w-sm drop-shadow-md"
+        imgAlt={constants.PORTFOLIO_IMGS[0].alt}
+        imgSrc={constants.PORTFOLIO_IMGS[0].src}
+        onClick={()=>{window.location.href='/Portfolio'}}
+      >
+        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-between">
+          <span>My Portfolio</span>
+          <FontAwesomeIcon icon={faShare}/>
+        </h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">
+          See all the projects I have worked on.
+        </p>
+      </Card>
+      <Card className="grid-column: col-span-2">
+        <h2 className="max-w-screen-xl w-full flex flex-wrap mx-auto justify-between p-4 self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+          About my website
+        </h2>
+        <List className="ml-10">
+          {constants.PURPOSE_LIST.map((p,i)=>{
+            return <List.Item key={"purpose_"+i}>{p}</List.Item>
+          })}
+        </List>
+      </Card>
     </section>
   </>
 }

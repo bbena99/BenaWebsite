@@ -51,10 +51,7 @@ export const NavBar = (props:NavBarPropsI) => {
           })}
           <DarkThemeToggle
             theme={{root:{base:mode}}}
-            onClick={()=>{
-              toggleMode();
-              console.log(mode);
-            }}
+            onClick={()=>{toggleMode();}}
             className="dark:text-white"
           />
         </Navbar.Collapse>

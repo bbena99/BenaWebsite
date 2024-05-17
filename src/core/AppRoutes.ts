@@ -39,8 +39,8 @@ export const AppRoutes: AppRouteI[] = [
     isPage:true,
     pageElement:AboutPage()
   },{
-    displayName:'Projects',
-    routePath:'/Projects',
+    displayName:'Portfolio',
+    routePath:'/Portfolio',
     icon:faComputer,
     isPage:true,
     pageElement:ProjectsPage()
