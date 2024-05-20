@@ -1,5 +1,6 @@
 import maroon from "../assets/Maroon.png"
 import lab from "../assets/lab.png"
+import chi from "../assets/CHI.png"
 
 export class Constants{
   public static TITLE:string="Welcome to Brock Bena's Website"
@@ -10,7 +11,13 @@ export class Constants{
     },{
       src:lab,
       alt:"InTheLab"
+    },{
+      src:chi,
+      alt:"NavyPier"
     }
+  ]
+  public static PERSONAL_SECTIONS:{header:string,body:string}[]=[
+    
   ]
   public static PORTFOLIO_IMGS:{src:string,alt:string}[]=[
     {
