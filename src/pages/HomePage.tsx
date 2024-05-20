@@ -19,7 +19,7 @@ export function HomePage(props?:PageProps):ReactNode{
     <section id="carousel" className="grid grid-cols-2 gap-4 justify-items-center [&_div]:my-5">
       <a href="/AboutMe">
         <Card
-          className="max-w-sm drop-shadow-md"
+          className="max-w-lg drop-shadow-md"
           imgAlt={constants.PERSONAL_IMGS[0].alt}
           imgSrc={constants.PERSONAL_IMGS[0].src}
         >
@@ -34,7 +34,7 @@ export function HomePage(props?:PageProps):ReactNode{
       </a>
       <a href="Portfolio">
         <Card
-          className="max-w-sm drop-shadow-md"
+          className="max-w-lg drop-shadow-md"
           imgAlt={constants.PORTFOLIO_IMGS[0].alt}
           imgSrc={constants.PORTFOLIO_IMGS[0].src}
         >
