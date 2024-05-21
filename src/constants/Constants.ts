@@ -1,6 +1,7 @@
 import maroon from "../assets/Maroon.png"
 import lab from "../assets/lab.png"
 import chi from "../assets/CHI.png"
+import e7calc from "../assets/e7Calc.png"
 
 export class Constants{
   public static TITLE:string="Welcome to Brock Bena's Website"
@@ -21,11 +22,8 @@ export class Constants{
   ]
   public static PORTFOLIO_IMGS:{src:string,alt:string}[]=[
     {
-      src:maroon,
-      alt:"MarronPark"
-    },{
-      src:lab,
-      alt:"InTheLab"
+      src:e7calc,
+      alt:"Epic 7 Calculator"
     }
   ]
   public static PURPOSE_LIST:string[]=[
