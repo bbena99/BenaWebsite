@@ -1,12 +1,10 @@
 import { ReactNode } from "react";
-import { PageProps } from "../core";
 import { Card, List } from "flowbite-react";
 import { Constants } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShare } from "@fortawesome/free-solid-svg-icons";
 
-export function HomePage(props?:PageProps):ReactNode{
-  console.log(props);
+export function HomePage():ReactNode{
   const constants = Constants;
   return <>
     <section id="jumbotron" className="bg-gray-300 dark:bg-gray-900">
@@ -16,8 +14,8 @@ export function HomePage(props?:PageProps):ReactNode{
         </h1>
       </div>
     </section>
-    <section id="carousel" className="grid grid-cols-2 gap-4 justify-items-center [&_div]:my-5">
-      <a href="/AboutMe">
+    <section id="cards" className="grid grid-cols-4 gap-4 justify-items-center [&_div]:my-5">
+      <a href="/AboutMe" className="col-span-2">
         <Card
           className="max-w-lg drop-shadow-md"
           imgAlt={constants.PERSONAL_IMGS[0].alt}
@@ -32,7 +30,7 @@ export function HomePage(props?:PageProps):ReactNode{
           </p>
         </Card>
       </a>
-      <a href="Portfolio">
+      <a href="Portfolio" className="col-span-2">
         <Card
           className="max-w-lg drop-shadow-md"
           imgAlt={constants.PORTFOLIO_IMGS[0].alt}
@@ -47,7 +45,7 @@ export function HomePage(props?:PageProps):ReactNode{
           </p>
         </Card>
       </a>
-      <Card className="grid-column: col-span-2">
+      <Card className="grid-column: col-span-4">
         <h2 className="max-w-screen-xl w-full flex flex-wrap mx-auto justify-between p-4 self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
           About my website
         </h2>

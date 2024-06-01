@@ -3,16 +3,18 @@ import {
   HomePage,
   PageNotFound,
   AboutPage,
-  ProjectsPage
+  ProjectsPage,
+  ResumePage
 } from "../pages";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { 
   faComputer,
-  faFileDownload,
   faFire,
   faQuestion,
   faUser
 } from "@fortawesome/free-solid-svg-icons";
+import { faFile } from "@fortawesome/free-regular-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export interface PageProps {
   pageName:string;
@@ -22,40 +24,39 @@ export interface AppRouteI {
   displayName:string;
   routePath:string;
   icon:IconDefinition;
-  isPage:boolean;
-  pageElement:ReactNode|string[];
+  pageElement:ReactNode;
 }
 export const AppRoutes: AppRouteI[] = [
   {
     displayName:'Home',
     routePath:'/',
     icon:faFire,
-    isPage:true,
     pageElement:HomePage()
   },{
     displayName:'About Me',
     routePath:'/AboutMe',
     icon:faUser,
-    isPage:true,
     pageElement:AboutPage()
   },{
     displayName:'Portfolio',
     routePath:'/Portfolio',
     icon:faComputer,
-    isPage:true,
     pageElement:ProjectsPage()
   },{
-    displayName:'Downloads',
-    routePath:'/Downloads',
-    icon:faFileDownload,
-    isPage:false,
-    pageElement:["Resume"]
+    displayName:'Resume',
+    routePath:'/Resume',
+    icon:faFile,
+    pageElement:ResumePage()
+  },{
+    displayName:'GitHub',
+    routePath:'https://github.com/bbena99',
+    icon:faGithub,
+    pageElement:AboutPage()
   },
   {
     displayName:'Page Not Found',
     routePath:'*',
     icon:faQuestion,
-    isPage:true,
     pageElement:PageNotFound()
   }
 ]

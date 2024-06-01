@@ -17,9 +17,6 @@ export class Constants{
       alt:"NavyPier"
     }
   ]
-  public static PERSONAL_SECTIONS:{header:string,body:string}[]=[
-    
-  ]
   public static PORTFOLIO_IMGS:{src:string,alt:string}[]=[
     {
       src:e7calc,
