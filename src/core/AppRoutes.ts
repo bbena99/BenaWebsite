@@ -28,7 +28,7 @@ export interface AppRouteI {
 }
 export const AppRoutes: AppRouteI[] = [
   {
-    displayName:'Home',
+    displayName:'BenaWebsite',
     routePath:'/',
     icon:faFire,
     pageElement:HomePage()

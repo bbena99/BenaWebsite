@@ -13,6 +13,7 @@ export function PageLayout(props:PageLayoutPropsI):ReactNode{
   return (
     <>
       <NavBar routes={routes} mode={mode} toggleMode={toggleMode} />
+      <div className=" h-20"/>
       <Outlet/>
     </>
   );

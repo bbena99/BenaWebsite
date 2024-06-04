@@ -12,7 +12,7 @@ export const NavBar = (props:NavBarPropsI) => {
   const displayRoutes = [...routes.slice(1,routes.length-1)];
   const home = routes[0];
   return (
-    <Navbar rounded>
+    <Navbar rounded className="w-full fixed top-0 start-0 z-20">
       <div className="max-w-screen-xl w-full flex flex-wrap items-center mx-auto justify-between p-4">
         <Navbar.Brand href={home.routePath}>
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
