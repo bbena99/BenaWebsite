@@ -12,23 +12,23 @@ export const NavBar = (props:NavBarPropsI) => {
   const displayRoutes = [...routes.slice(1,routes.length-1)];
   const home = routes[0];
   return (
-    <Navbar rounded className="w-full fixed top-0 start-0 z-20">
-      <div className="max-w-screen-xl w-full flex flex-wrap items-center mx-auto justify-between p-4">
+    <Navbar rounded className="w-full h-20 fixed top-0 start-0 z-20">
+      <div className="max-w-screen-xl w-full flex flex-wrap items-center mx-auto justify-between p-4 z-10">
         <Navbar.Brand href={home.routePath}>
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
             <FontAwesomeIcon icon={home.icon} />
             {" "+home.displayName}
           </span>
         </Navbar.Brand>
-        <div className="flex md:order-2 sm:inline md:hidden">
+        <div className="!flex items-center md:order-2 md:!hidden">
           <Navbar.Toggle className="h-full w-half"/>
           <DarkThemeToggle
             theme={{root:{base:mode}}}
             onClick={()=>{toggleMode();}}
-            className="dark:text-white inline-flex items-center rounded-lg h-full w-half text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="p-2 dark:text-white inline-flex items-center rounded-lg h-full w-half text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           />
         </div>
-        <Navbar.Collapse className="[&_ul]:items-center">
+        <Navbar.Collapse className="[&_ul]:items-center z-10">
           {displayRoutes.map(r=>{
             return <Navbar.Link href={r.routePath} key={r.displayName+"_Nav_Btn"} className="text-base">
               <FontAwesomeIcon icon={r.icon}/>
