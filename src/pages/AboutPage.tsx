@@ -33,7 +33,7 @@ export function AboutPage():ReactNode{
         <ul className="list-disc space-y-1 text-gray-900 list-inside dark:text-gray-200">
         {Constants.HOBBIES.map(h=>{
           return (
-            <li key={h.hobby} className="border-2 rounded-lg p-2 dark:border-gray-500">
+            <li key={h.hobby} className="p-2">
               {h.hobby}<br/>
               <span className="ml-10 text-gray-700 dark:text-gray-400">
                 {h.description}
@@ -57,7 +57,7 @@ export function AboutPage():ReactNode{
         <ol className="list-decimal space-y-1 text-gray-950 list-inside dark:text-gray-200">
         {Constants.SKILLS.map(s=>{
           return (
-            <li key={s.skill} className="border-2 rounded-lg p-2 dark:border-gray-500">
+            <li key={s.skill} className="p-2">
               {s.skill}<br/>
               <span className="ml-10 text-gray-800 dark:text-gray-400">
                 {s.description}
