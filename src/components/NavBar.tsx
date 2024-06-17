@@ -12,8 +12,8 @@ export const NavBar = (props:NavBarPropsI) => {
   const displayRoutes = [...routes.slice(1,routes.length-1)];
   const home = routes[0];
   return (
-    <Navbar rounded className="w-full fixed z-10 top-0 start-0 flex items-center py-5">
-      <Navbar.Brand href={home.routePath} className=" h-10">
+    <Navbar rounded className="w-full fixed z-10 top-0 start-0 flex items-center py-3">
+      <Navbar.Brand href={home.routePath} className=" h-14">
         <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
           <FontAwesomeIcon icon={home.icon} />
           {" "+home.displayName}
@@ -37,7 +37,7 @@ export const NavBar = (props:NavBarPropsI) => {
         <DarkThemeToggle
           theme={{root:{base:mode}}}
           onClick={()=>{toggleMode();}}
-          className="dark:text-white ml-4 hidden md:inline"
+          className="dark:text-white ml-4 hidden md:inline text-lg"
         />
       </Navbar.Collapse>
     </Navbar>

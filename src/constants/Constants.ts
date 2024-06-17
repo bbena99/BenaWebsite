@@ -1,9 +1,9 @@
 import Resume from "../assets/Resume.png"
 import me from "../assets/Me.png"
-import meandgf from "../assets/MeAndGf.png"
 import maroon from "../assets/Maroon.png"
 import lab from "../assets/lab.png"
 import chi from "../assets/CHI.png"
+import congrats from "../assets/congrats.png"
 import e7calc from "../assets/e7Calc.png"
 import personalWebsite from "../assets/PersonalWebsite.png"
 import { PageI } from "../models"
@@ -24,8 +24,8 @@ export class Constants{
       src:me,
       alt:"MeAlone"
     },{
-      src:meandgf,
-      alt:"Me and Girlfriend"
+      src:congrats,
+      alt:"Congrats"
     }
   ]
   public static PORTFOLIO_IMGS:{src:string,alt:string}[]=[

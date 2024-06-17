@@ -6,16 +6,14 @@ import Code from "../assets/Code.png"
 
 export function AboutPage():ReactNode{
   return (
-    <div className="grid grid-cols-12 gap-16 md:px-24 py-10 min-w-fit">
+    <div className="grid grid-cols-12 gap-8 md:px-24 md:py-10 min-w-fit">
       {/**Start of Row 1*/}
-      <div className="col-span-12 md:col-span-6 bg-gray-300 dark:bg-gray-900 w-full rounded-xl xl:h-96 lg:h-64 md:h-32 flex items-center">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 md:py-8">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-            About me,<br/> Brock Bena
-          </h1>
-        </div>
+      <div className="col-span-12 md:col-span-6 bg-gray-300 dark:bg-gray-900 w-full rounded-xl h-32 md:h-96 flex items-center">
+        <h1 className="text-center mb-4 w-full text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          About me,<br className="sm:hidden md:inline 2xl:hidden"/> Brock Bena
+        </h1>
       </div>
-      <Carousel className="col-span-12 md:col-span-6 max-w-screen-lg w-full [&_div]:rounded-xl h-32 xl:h-96 lg:h-64">
+      <Carousel className="col-span-12 md:col-span-6 max-w-screen-lg w-full [&_div]:rounded-xl h-96 bg-gray-300 dark:bg-gray-900 rounded-xl">
         {Constants.PERSONAL_IMGS.map(img=>{
           return <img src={img.src} alt={img.alt} key={img.alt+"_carousel"}/>
         })}
