@@ -16,9 +16,9 @@ export function HomePage():ReactNode{
       </div>
     </section>
     <section id="cards" className="grid grid-cols-6 gap-4 justify-items-center mx-24 [&_div]:my-5">
-      <a href="/AboutMe" className="col-span-2">
+      <a href="/AboutMe" className="col-span-6 md:col-span-3 xl:col-span-2 h-full min-w-64">
         <Card
-          className="max-w-lg drop-shadow-md"
+          className="max-w-lg drop-shadow-md hover:drop-shadow-2xl [&_h5]:hover:text-cyan-700 [&_h5]:dark:hover:text-white"
           imgAlt={constants.PERSONAL_IMGS[0].alt}
           imgSrc={constants.PERSONAL_IMGS[0].src}
         >
@@ -31,9 +31,9 @@ export function HomePage():ReactNode{
           </p>
         </Card>
       </a>
-      <a href="Portfolio" className="col-span-2">
+      <a href="Portfolio" className="col-span-6 md:col-span-3 xl:col-span-2 h-full min-w-64">
         <Card
-          className="max-w-lg drop-shadow-md"
+          className="max-w-lg drop-shadow-md hover:drop-shadow-2xl [&_h5]:hover:text-cyan-700 [&_h5]:dark:hover:text-white"
           imgAlt={constants.PORTFOLIO_IMGS[0].alt}
           imgSrc={constants.PORTFOLIO_IMGS[0].src}
         >
@@ -46,9 +46,9 @@ export function HomePage():ReactNode{
           </p>
         </Card>
       </a>
-      <a href="/Resume" className="col-span-2">
+      <a href="/Resume" className="col-span-6 md:col-span-3 xl:col-span-2 h-full min-w-64">
         <Card
-          className="max-w-lg drop-shadow-md"
+          className="max-w-lg drop-shadow-md hover:drop-shadow-2xl [&_h5]:hover:text-cyan-700 [&_h5]:dark:hover:text-white"
           imgAlt={constants.RESUME_IMG.alt}
           imgSrc={constants.RESUME_IMG.src}
         >
