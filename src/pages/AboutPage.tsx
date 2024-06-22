@@ -8,8 +8,8 @@ export function AboutPage():ReactNode{
   return (
     <div className="grid grid-cols-12 gap-8 md:px-24 md:py-10 min-w-fit">
       {/**Start of Row 1*/}
-      <div className="col-span-12 md:col-span-6 bg-gray-300 dark:bg-gray-900 w-full rounded-xl h-32 md:h-96 flex items-center">
-        <h1 className="text-center mb-4 w-full text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <div className="col-span-12 md:col-span-6 bg-gray-300 dark:bg-gray-900 w-full rounded-xl h-32 md:h-96 flex items-center flex-wrap content-center">
+        <h1 className="text-center w-full text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mb-4 dark:text-white">
           About me,<br className="sm:hidden md:inline 2xl:hidden"/> Brock Bena
         </h1>
       </div>

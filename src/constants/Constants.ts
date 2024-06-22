@@ -43,12 +43,12 @@ export class Constants{
     'Try out Tailwind as a css library with custom React components.',
     'Implementing a light/dark mode to a webpage. See the upper right corner icon to change modes.',
     'Show the ability to build a dynamically scaled website that is easy to add and remove elements from the site.',
-    'Worked on implementing a dedicated custom "Page Not Found", so the user knows they are accessing the right website, but the page their looking for doesn\'t exist'
+    'Worked on implementing a dedicated custom "Page Not Found", so the user knows they are accessing the right website, but the page they\'re looking for doesn\'t exist'
   ]
   public static HOBBIES:{hobby:string,description:string}[]=[
     {
       hobby:"Golf",
-      description:"I try to golf 2-3 times a week because there is a golf course roughly one mile from my house. My favorite club is probably my 56° wedge."
+      description:"I would golf 2-3 times a week, when I was back in my hometown, because there was a golf course roughly one mile from my house. My favorite club to use is probably my 56° wedge."
     },{
       hobby:"Skiing",
       description:"Back home, I started skiing around 9 at our local ski hill. I now travel a little bit to other ski hills in the area."
