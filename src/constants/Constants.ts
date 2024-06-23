@@ -39,19 +39,19 @@ export class Constants{
     alt:"Resume"
   }
   public static PURPOSE_LIST:string[]=[
-    'Reenforce my knowledge of React frameworks.',
-    'Try out Tailwind as a css library with custom React components.',
+    'I developed this website to reinforce my knowledge of React frameworks.',
+    'Try out Tailwind as a CSS library with custom React components.',
+    'Demonstrate the ability to build a dynamically-scaled website that is easy to add and remove elements from the site.',
     'Implementing a light/dark mode to a webpage. See the upper right corner icon to change modes.',
-    'Show the ability to build a dynamically scaled website that is easy to add and remove elements from the site.',
-    'Worked on implementing a dedicated custom "Page Not Found", so the user knows they are accessing the right website, but the page they\'re looking for doesn\'t exist'
+    'Building a dedicated custom "Page Not Found", so the user knows they are accessing the right website, but the page they\'re looking for doesn\'t exist.'
   ]
   public static HOBBIES:{hobby:string,description:string}[]=[
     {
       hobby:"Golf",
-      description:"I would golf 2-3 times a week, when I was back in my hometown, because there was a golf course roughly one mile from my house. My favorite club to use is probably my 56° wedge."
+      description:"I would golf 2-3 times a week, when I was back in my hometown, because there was a golf course roughly one mile from my house. My favorite club to use is probably my 56° wedge. I'm looking forward to trying out the Sydney R. Marovitz Golf Course and others in Chicago."
     },{
-      hobby:"Skiing",
-      description:"Back home, I started skiing around 9 at our local ski hill. I now travel a little bit to other ski hills in the area."
+      hobby:"Downhill Skiing",
+      description:"I started downhill skiing around 9 at my hometown's ski hill. I now travel a little bit to other ski hills in the area."
     },{
       hobby:"Working out/Fitness",
       description:"I keep variable dumbbells by my desk to do a variety of lifts. I've been fond of overhead presses lately."
@@ -60,7 +60,7 @@ export class Constants{
       description:"I mostly play MMO's, but I also play FPS's with some friends. I've also dabbled in fighting games."
     },{
       hobby:"Crafts/Woodwork",
-      description:"I'm pretty handy, and I have made some little wooden game boards. I recently made my mom a marbles board."
+      description:"I'm pretty handy and have made some little wooden game boards. I recently made my mom a marbles board."
     }, {
       hobby:"Movies",
       description:"My favorite movie is \"Hitchhicker's Guide to the Galaxy\". The most recent movie I've watched is \"Ford vs Ferrari\""
@@ -69,25 +69,25 @@ export class Constants{
   public static SKILLS:{skill:string,description:string}[]=[
     {
       skill: "Typescript/Javascript",
-      description: "My most proficient language by far. I'd say I'm more fluent in TS/JS than I am in english at this point. I started using it while learning vanilla web development project using JQerry, but I'm currently using it for server side development and in React and Angular frameworks."
+      description: "My most proficient language by far. I started using it while learning vanilla web development project using JQerry, but I'm currently using it for server side development and in React and Angular frameworks."
     },{
       skill: "HTML/CSS",
-      description: "I grouped these together because you can't really have one without the other. I learned this in my entry level Web Development class, and have used them throughout my career ever since."
+      description: "I grouped these together because you can't really have one without the other. I learned this in my entry level Web Development course, and have used them throughout my career ever since."
     },{
       skill: "Bootstrap/MUI/Tailwind",
-      description: "I have used all these css libraries to make my web pages look better and easier to use."
+      description: "I have experience with all of these CSS libraries to make my web pages look better and easier to understand."
     },{
       skill: "Java/Spring",
-      description: "This was the first language I learned in college. I did also learn Springboot java for a backend service as well in my Web Development class."
+      description: "This was the first language I learned in college. I also learned Springboot java for a backend service as well in my Web Development course."
     },{
       skill: "SQL/MongoDB",
-      description: "I took a full Databases course in college using exclusively SQL queried DB's. I also learned NRDB's in my Web Development course."
+      description: "I took a full Databases course in college using exclusively SQL queried DBs. I also learned NRDBs in my Web Development course."
     },{
       skill: "C/C#",
-      description: "A majority of courses in my college carer were taught in C using the CS department's server. At my previous workspace, we used C# for a backend after previously using Python."
+      description: "A majority of courses in my college career were taught in C using the CS department's server. At my previous workplace, we used C# for a backend after previously using Python."
     },{
       skill: "Linux/SSH",
-      description: "Similar to the last point, our school had a server, and it was run of a Linux cli. To access this terminal, we utilized shh to remote into the server."
+      description: "Our school had a server, which was run off of a Linux CLI. To access this terminal, we utilized SSH to remote into the server. I also utilized a Linux based terminal for my Amazon EC2 instance for this project."
     }
   ]
   public static PORTFOLIO:{accordionName:string,cards:PageI[]}[]=[
@@ -96,7 +96,7 @@ export class Constants{
       cards:[
         {
           name: "Portfolio Website",
-          description: "A basic webpage to display my previous and current works in the field. This was my first time using Tailwind, and it was great.",
+          description: "A basic webpage to display my previous and current works in the field. This was my first time using Tailwind, and it was great using this library. I found it very easy to use and understand.",
           imgsrc: personalWebsite,
           imgalt: "PersonalWebsite",
           skills: [
@@ -111,7 +111,7 @@ export class Constants{
       cards: [
         {
           name: "Epic Seven Calculator",
-          description: "A gear calculator for the mobile game Epic Seven. I built this for myself to track the gear substats to see if they were on the high end or the low end. In the game, these are kind of hard to track since it only tells you the stat itself.",
+          description: "A gear calculator for the mobile game Epic Seven. I built this for myself to track the gear substats to see if they were on the high end or the low end. In the game, these are difficult to track since it only tells you the stat itself.",
           imgsrc: e7calc,
           imgalt: "Epic 7 Calculator",
           skills: [
@@ -120,10 +120,10 @@ export class Constants{
             "ExpressJS backend",
             "AWS(Eventually)"
           ],
-          reason: "I still need to sit down and figure out some creative direction with the project. I have all the math and logic finished, but I'm not sure if I want to redo the frontend to be React/Tailwind because there are parts of the Angular that I'm really not a fan of."
+          reason: "I have all the math and logic finished, but I'm looking to switch from an Angular/Bootstrap frontend to a React/Tailwind design. I've already started to rebuild the frontend while adding more data to the backend."
         },{
-          name: "Bena Art",
-          description: "An AI generated art website. Where you can write a prompt to an API I found and generate AI art. This was my final project for my Web Development class at UWL.",
+          name: "Bena-Art",
+          description: "I created an AI generated art website. With this application, a user can write a prompt to an API and generate AI art. This was my final project for my Web Development course at UW-La Crosse.",
           imgsrc: "",
           imgalt: "",
           skills: [
@@ -132,7 +132,7 @@ export class Constants{
             "ExpressJS backend",
             "Axios API"
           ],
-          reason: "I originally deployed this on our school server, which I don't have access to. The API is also a paid API, which I stopped paying for."
+          reason: "I originally completed and deployed this on the UW-La Crosse server."
         }
       ]
     },{
@@ -140,7 +140,7 @@ export class Constants{
       cards: [
         {
           name: "Trane Automated Test Tool (TATU)",
-          description: "This was professional work for when I was at Trane Technologies. This was a tool to test new controller builds/features.",
+          description: "This was professional work while I was at Trane Technologies. TATU was a tool to test new HVAC controller builds/features.",
           skills: [
             "ReactTS frontend",
             "Material UI CSS",
@@ -148,10 +148,10 @@ export class Constants{
             "Python backend",
             "C# backend",
           ],
-          reason: "TATU is an internal tool at Trane Technologies, so there is no way to display the tool to external sources."
+          reason: "TATU is an internal tool at Trane Technologies and cannot be deployed to external sources."
         },{
           name: "Connect 4",
-          description: "This was a running project in my Web Development class. Whenever we learned a new topic, we would make a new version of this site using said new topic. It started as a JQuery/ExpressJS. Then we learned Angular, so it changed to an Angular/ExpressJS project. Finally we learned SpringBoot so it became an Angular/SpringBoot project.",
+          description: "This was a running project in my Web Development course. Whenever we learned a new skill, we would make a new version of this site using said new skill. It started as a JQuery/ExpressJS. Then we learned Angular, so it changed to an Angular/ExpressJS project. Finally we learned SpringBoot so it became an Angular/SpringBoot project.",
           skills: [
             "JQuery frontend",
             "Angular frontend",
@@ -159,7 +159,7 @@ export class Constants{
             "ExpressJS backend",
             "SpringBoot backend"
           ],
-          reason: "After going through so many iterations, and knowing more than I did when I started this project, I would rather rebuild it from scratch than work on the current version of the project."
+          reason: "After going through so many iterations, I would rather rebuild this in React/Tailwind/Express. I currently have more experience with these skills."
         }
       ]
     },{
@@ -167,7 +167,7 @@ export class Constants{
       cards: [
         {
           name: "No Roots Store Website",
-          description: "A local store is currently using facebook as their main web presence. They are looking to move more online, so I might help build a frontend and backend for their website",
+          description: "A local store is currently using Facebook as their main web presence. They are looking to create more online business, so I might help build a frontend and backend for their website.",
           skills: [
             "React frontend",
             "SocketJS communication",
@@ -176,7 +176,7 @@ export class Constants{
           ]
         },{
           name: "Realtor's Website",
-          description: "My realtor friend asked me to review his website, and I might update his current site to look better.",
+          description: "My realtor friend asked me to review his website and I might update his current site to look better.",
           skills: [
             "React frontend",
             "SocketJS communication",

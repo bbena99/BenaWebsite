@@ -42,7 +42,7 @@ export function ProjectsPage():ReactNode{
                         {card.reason?(
                           <>
                             <br/>
-                            Reason this project isn't finished/deployed:
+                            Reason this project isn't currently deployed:
                             <p className="text-gray-800 dark:text-gray-300">
                               {card.reason}
                             </p>
