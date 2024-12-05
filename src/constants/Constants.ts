@@ -69,7 +69,7 @@ export class Constants{
   public static SKILLS:{skill:string,description:string}[]=[
     {
       skill: "Typescript/Javascript",
-      description: "My most proficient language by far. I started using it while learning vanilla web development project using JQerry, but I'm currently using it for server side development and in React and Angular frameworks."
+      description: "My most proficient language by far. I started using it while learning vanilla web development project using JQerry, but I'm currently using it for server side development and in Vue, React, and Angular frameworks."
     },{
       skill: "HTML/CSS",
       description: "I grouped these together because you can't really have one without the other. I learned this in my entry level Web Development course, and have used them throughout my career ever since."
@@ -84,7 +84,7 @@ export class Constants{
       description: "I took a full Databases course in college using exclusively SQL queried DBs. I also learned NRDBs in my Web Development course."
     },{
       skill: "PHP/Laravel",
-      description: "I saw the rise of PHP and thought it was a valuable skill to have.I am in the process of build a project with it now."
+      description: "I saw the rise of PHP because of all the development updates and support, and I thought it was a valuable skill to have. I am in the process of build a project with it now."
     },{
       skill: "C/C#",
       description: "A majority of courses in my college career were taught in C using the CS department's server. At my previous workplace, we used C# for a backend after previously using Python."
@@ -134,7 +134,8 @@ export class Constants{
             "Tailwind CSS",
             "ExpressJS backend",
             "CloudFlare hosting(Eventually)"
-          ]
+          ],
+          reason: "This project is still early in development."
         },{
           name: "Pokemon Wiki",
           description: "Currently, there are 3 main wiki pages for pokemon data, and each of them has a flaw, in my opinion, that makes them disadvantageous to use. The first is lacking a modern UI, the second lacks detailed description of attributes to pokemon, the final one is riddled with white space, you have to scroll down 3 pages just to get to the end of a section.",
@@ -142,7 +143,8 @@ export class Constants{
             "VueTS Frontend",
             "Tailwind CSS",
             "LaravelPHP backend"
-          ]
+          ],
+          reason: "I am taking time to learn new skills properly, so this might take some time to develop."
         }
       ]
     },{
