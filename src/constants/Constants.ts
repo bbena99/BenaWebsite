@@ -83,6 +83,9 @@ export class Constants{
       skill: "SQL/MongoDB",
       description: "I took a full Databases course in college using exclusively SQL queried DBs. I also learned NRDBs in my Web Development course."
     },{
+      skill: "PHP/Laravel",
+      description: "I saw the rise of PHP and thought it was a valuable skill to have.I am in the process of build a project with it now."
+    },{
       skill: "C/C#",
       description: "A majority of courses in my college career were taught in C using the CS department's server. At my previous workplace, we used C# for a backend after previously using Python."
     },{
@@ -115,24 +118,31 @@ export class Constants{
           imgsrc: e7calc,
           imgalt: "Epic 7 Calculator",
           skills: [
-            "Angular frontend",
-            "Bootstrap CSS",
+            "React frontend",
+            "Tailwind CSS",
             "ExpressJS backend",
-            "AWS(Eventually)"
+            "CloudFlare hosting(Eventually)"
           ],
-          reason: "I have all the math and logic finished, but I'm looking to switch from an Angular/Bootstrap frontend to a React/Tailwind design. I've already started to rebuild the frontend while adding more data to the backend."
+          reason: "I have all the math and logic finished, but I'm looking to switch from an Angular/Bootstrap frontend to a React/Tailwind design. I've already started to rebuild the frontend while adding more data to the backend.\n Update: I have everything complete, I just need to insert all the data into my mock database."
         },{
-          name: "Bena-Art",
-          description: "I created an AI generated art website. With this application, a user can write a prompt to an API and generate AI art. This was my final project for my Web Development course at UW-La Crosse.",
-          imgsrc: "",
-          imgalt: "",
-          skills: [
-            "Angular frontend",
-            "Bootstrap CSS",
+          name: "Sword of Convallaria wiki",
+          description: "At the time of starting this project, Sword of Convallaria was a new and upcoming game with little to no external resources. I plan on making one.",
+          imgsrc:"",
+          imgalt:"",
+          skills:[
+            "React frontend",
+            "Tailwind CSS",
             "ExpressJS backend",
-            "Axios API"
-          ],
-          reason: "I originally completed and deployed this on the UW-La Crosse server."
+            "CloudFlare hosting(Eventually)"
+          ]
+        },{
+          name: "Pokemon Wiki",
+          description: "Currently, there are 3 main wiki pages for pokemon data, and each of them has a flaw, in my opinion, that makes them disadvantageous to use. The first is lacking a modern UI, the second lacks detailed description of attributes to pokemon, the final one is riddled with white space, you have to scroll down 3 pages just to get to the end of a section.",
+          skills: [
+            "VueTS Frontend",
+            "Tailwind CSS",
+            "LaravelPHP backend"
+          ]
         }
       ]
     },{
@@ -150,6 +160,18 @@ export class Constants{
           ],
           reason: "TATU is an internal tool at Trane Technologies and cannot be deployed to external sources."
         },{
+          name: "Bena-Art",
+          description: "I created an AI generated art website. With this application, a user can write a prompt to an API and generate AI art. This was my final project for my Web Development course at UW-La Crosse.",
+          imgsrc: "",
+          imgalt: "",
+          skills: [
+            "Angular frontend",
+            "Bootstrap CSS",
+            "ExpressJS backend",
+            "Axios API"
+          ],
+          reason: "I originally completed and deployed this on the UW-La Crosse server."
+        },{
           name: "Connect 4",
           description: "This was a running project in my Web Development course. Whenever we learned a new skill, we would make a new version of this site using said new skill. It started as a JQuery/ExpressJS. Then we learned Angular, so it changed to an Angular/ExpressJS project. Finally we learned SpringBoot so it became an Angular/SpringBoot project.",
           skills: [
@@ -166,23 +188,9 @@ export class Constants{
       accordionName: "Future Possible Professional Projects",
       cards: [
         {
-          name: "No Roots Store Website",
-          description: "A local store is currently using Facebook as their main web presence. They are looking to create more online business, so I might help build a frontend and backend for their website.",
-          skills: [
-            "React frontend",
-            "SocketJS communication",
-            "ExpressJS backend",
-            "Axios API"
-          ]
-        },{
           name: "Realtor's Website",
           description: "My realtor friend asked me to review his website and I might update his current site to look better.",
-          skills: [
-            "React frontend",
-            "SocketJS communication",
-            "ExpressJS backend",
-            "Axios API"
-          ]
+          skills: []
         }
       ]
     }
