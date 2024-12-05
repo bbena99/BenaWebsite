@@ -9,7 +9,7 @@ import {
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { 
   faComputer,
-  faFire,
+  faPowerOff,
   faQuestion,
   faUser
 } from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +30,7 @@ export const AppRoutes: AppRouteI[] = [
   {
     displayName:'BenaWebsite',
     routePath:'/',
-    icon:faFire,
+    icon:faPowerOff,
     pageElement:HomePage()
   },{
     displayName:'About Me',
