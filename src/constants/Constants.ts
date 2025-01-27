@@ -5,6 +5,7 @@ import lab from "../assets/lab.png"
 import chi from "../assets/CHI.png"
 import congrats from "../assets/congrats.png"
 import e7calc from "../assets/e7Calc.png"
+import pokemon from "../assets/Pokemon.png"
 import personalWebsite from "../assets/PersonalWebsite.png"
 import { PageI } from "../models"
 
@@ -127,8 +128,6 @@ export class Constants{
         },{
           name: "Sword of Convallaria wiki",
           description: "At the time of starting this project, Sword of Convallaria was a new and upcoming game with little to no external resources. I plan on making one.",
-          imgsrc:"",
-          imgalt:"",
           skills:[
             "React frontend",
             "Tailwind CSS",
@@ -139,6 +138,8 @@ export class Constants{
         },{
           name: "Pokemon Wiki",
           description: "Currently, there are 3 main wiki pages for pokemon data, and each of them has a flaw, in my opinion, that makes them disadvantageous to use. The first is lacking a modern UI, the second lacks detailed description of attributes to pokemon, the final one is riddled with white space, you have to scroll down 3 pages just to get to the end of a section.",
+          imgsrc: pokemon,
+          imgalt: "PokemonWiki.png",
           skills: [
             "VueTS Frontend",
             "Tailwind CSS",
