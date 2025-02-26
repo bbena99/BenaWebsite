@@ -14,7 +14,6 @@ import {
   faUser
 } from "@fortawesome/free-solid-svg-icons";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export interface PageProps {
   pageName:string;
@@ -47,11 +46,6 @@ export const AppRoutes: AppRouteI[] = [
     routePath:'/Resume',
     icon:faFile,
     pageElement:ResumePage()
-  },{
-    displayName:'GitHub',
-    routePath:'https://github.com/bbena99',
-    icon:faGithub,
-    pageElement:AboutPage()
   },
   {
     displayName:'Page Not Found',
