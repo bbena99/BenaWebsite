@@ -35,15 +35,13 @@ export const NavBar = (props:NavBarPropsI) => {
             {" "+r.displayName}
           </Navbar.Link>;
         })}
-        <Navbar.Link href={'#'}>
-          <ButtonGroup>
+        <ButtonGroup>
           {buttonGroup.map((btn:ButtonGroupI)=>{
             return <Button href={btn.link} key={btn.name}>
               <FontAwesomeIcon icon={btn.icon}/>
             </Button>
           })}
-          </ButtonGroup>
-        </Navbar.Link>
+        </ButtonGroup>
         <DarkThemeToggle
           theme={{root:{base:mode}}}
           onClick={()=>{toggleMode();}}
