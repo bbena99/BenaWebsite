@@ -28,7 +28,7 @@ export const NavBar = (props:NavBarPropsI) => {
           className="p-2 dark:text-white inline-flex items-center rounded-lg h-full w-half text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         />
       </div>
-      <Navbar.Collapse>
+      <Navbar.Collapse className="[&>ul>li]:flex [&>ul>li]:items-center">
         {displayRoutes.map(r=>{
           return <Navbar.Link href={r.routePath} key={r.displayName+"_Nav_Btn"} className="text-base w-full">
             <FontAwesomeIcon icon={r.icon}/>
@@ -37,7 +37,7 @@ export const NavBar = (props:NavBarPropsI) => {
         })}
         <ButtonGroup>
           {buttonGroup.map((btn:ButtonGroupI)=>{
-            return <Button href={btn.link} key={btn.name}>
+            return <Button href={btn.link} key={btn.name} className="bg-gray-700 dark:bg-gray-100 text-white dark:text-gray-700">
               <FontAwesomeIcon icon={btn.icon}/>
             </Button>
           })}
