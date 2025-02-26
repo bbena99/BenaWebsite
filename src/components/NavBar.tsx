@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { DarkThemeToggle, Navbar, ThemeMode } from "flowbite-react";
+import { Button, ButtonGroup, DarkThemeToggle, Navbar, ThemeMode } from "flowbite-react";
 import { AppRouteI } from "../core";
+import { buttonGroup, ButtonGroupI} from "../core"
 
 interface NavBarPropsI{
   routes:AppRouteI[];
@@ -34,6 +35,15 @@ export const NavBar = (props:NavBarPropsI) => {
             {" "+r.displayName}
           </Navbar.Link>;
         })}
+        <Navbar.Link href={'#'}>
+          <ButtonGroup>
+          {buttonGroup.map((btn:ButtonGroupI)=>{
+            return <Button href={btn.link} key={btn.name}>
+              <FontAwesomeIcon icon={btn.icon}/>
+            </Button>
+          })}
+          </ButtonGroup>
+        </Navbar.Link>
         <DarkThemeToggle
           theme={{root:{base:mode}}}
           onClick={()=>{toggleMode();}}
