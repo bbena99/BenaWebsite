@@ -1,13 +1,13 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faDiscord, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-interface ButtonGroupI{
+export interface ButtonGroupI{
   name:string;
   link:string;
   icon:IconDefinition;
 }
 
-export const ButtonGroup:ButtonGroupI[]=[
+export const buttonGroup:ButtonGroupI[]=[
   {
     name:"GitHub",
     link:"https://github.com/bbena99",
