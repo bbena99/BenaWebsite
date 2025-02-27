@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, ButtonGroup, DarkThemeToggle, Navbar, ThemeMode } from "flowbite-react";
+import { Button, ButtonGroup, DarkThemeToggle, Navbar, ThemeMode, Tooltip } from "flowbite-react";
 import { AppRouteI } from "../core";
 import { buttonGroup, ButtonGroupI} from "../core"
 
@@ -35,13 +35,24 @@ export const NavBar = (props:NavBarPropsI) => {
             {" "+r.displayName}
           </Navbar.Link>;
         })}
-        <ButtonGroup>
-          {buttonGroup.map((btn:ButtonGroupI)=>{
-            return <Button href={btn.link} key={btn.name} className="bg-gray-700 dark:bg-gray-100 text-white dark:text-gray-700">
-              <FontAwesomeIcon icon={btn.icon}/>
-            </Button>
+        <div className="flex">
+          {buttonGroup.map((btn:ButtonGroupI,index:number)=>{
+            let rounding = "rounded-none"
+            switch (index){
+              case 0: 
+                rounding = "rounded-e-none";
+                break;
+              case buttonGroup.length-1:
+                rounding = "rounded-s-none";
+                break;
+            }
+            return <Tooltip content={btn.hover} placement="bottom" key={btn.name} animation="duration-500">
+              <Button onClick={()=>btn.fn()} className={"bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-700 [&>span]:px-2 "+rounding}>
+                <FontAwesomeIcon icon={btn.icon} className="text-base" />
+              </Button>
+            </Tooltip> 
           })}
-        </ButtonGroup>
+        </div>
         <DarkThemeToggle
           theme={{root:{base:mode}}}
           onClick={()=>{toggleMode();}}
