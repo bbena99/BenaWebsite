@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, ButtonGroup, DarkThemeToggle, Navbar, ThemeMode, Tooltip } from "flowbite-react";
+import { Button, DarkThemeToggle, Navbar, ThemeMode, Tooltip } from "flowbite-react";
 import { AppRouteI } from "../core";
 import { buttonGroup, ButtonGroupI} from "../core"
 
