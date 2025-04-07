@@ -40,16 +40,31 @@ export const NavBar = (props:NavBarPropsI) => {
             let rounding = "rounded-none"
             switch (index){
               case 0: 
-                rounding = "rounded-e-none";
+                rounding = "rounded-e-none rounded-s-lg";
                 break;
               case buttonGroup.length-1:
                 rounding = "rounded-s-none";
                 break;
             }
             return <Tooltip content={btn.hover} placement="bottom" key={btn.name} animation="duration-500">
-              <Button onClick={()=>btn.fn()} className={"bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-700 [&>span]:px-2 "+rounding}>
-                <FontAwesomeIcon icon={btn.icon} className="text-base" />
-              </Button>
+              {(btn.href)?(
+                <a href={btn.href} className={"flex justify-center items-center w-full h-full p-2 bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-700 hover:bg-cyan-800 hover:dark:bg-cyan-700 "+rounding}>
+                  <FontAwesomeIcon icon={btn.icon} className="text-base" />
+                </a>
+              ):(
+                <Button
+                  onClick={()=>{
+                    if(btn.fn){
+                      btn.fn();
+                      rounding+=" bg-lime-500"
+                    }
+                    else return undefined;
+                  }}
+                  className={"p-0 bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-700 [&>span]:px-2 "+rounding}
+                >
+                  <FontAwesomeIcon icon={btn.icon} className="text-base"/>
+                </Button>
+              )}
             </Tooltip> 
           })}
         </div>

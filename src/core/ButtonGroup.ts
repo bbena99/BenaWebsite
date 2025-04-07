@@ -4,7 +4,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export interface ButtonGroupI{
   name:string;
-  fn:()=>void;
+  fn?:()=>void;
+  href?:string;
   hover:string;
   icon:IconDefinition;
 }
@@ -12,16 +13,12 @@ export interface ButtonGroupI{
 export const buttonGroup:ButtonGroupI[]=[
   {
     name:"GitHub",
-    fn:()=>{
-      window.location.href="https://github.com/bbena99";
-    },
+    href:"https://github.com/bbena99",
     hover:"To my GitHub profile",
     icon:faGithub
   },{
     name:"Linkedin",
-    fn:()=>{
-      window.location.href="https://www.linkedin.com/in/brock-bena-b06b29208/"
-    },
+    href:"https://www.linkedin.com/in/brock-bena-b06b29208/",
     hover:"To my Linkedin Profile",
     icon:faLinkedin
   },{
@@ -29,6 +26,7 @@ export const buttonGroup:ButtonGroupI[]=[
     fn:()=>{
       window.location.href="https://discordapp.com/users/bbena99"
     },
+    href:"https://discordapp.com/users/bbena99",
     hover:"Reach out to me on Discord",
     icon:faDiscord
   },{
