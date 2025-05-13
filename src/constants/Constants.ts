@@ -108,7 +108,18 @@ export class Constants{
             "Tailwind CSS",
             "AWS deployment"
           ],
-        },
+        },{
+          name: "Pokemon Wiki",
+          description: "Currently, there are 3 main wiki pages for pokemon data, and each of them has a flaw, in my opinion, that makes them disadvantageous to use. The first is lacking a modern UI, the second lacks detailed description of attributes to pokemon, the final one is riddled with white space, you have to scroll down 3 pages just to get to the end of a section.",
+          imgsrc: pokemon,
+          imgalt: "PokemonWiki.png",
+          skills: [
+            "VueTS Frontend",
+            "Tailwind CSS",
+            "LaravelPHP backend"
+          ],
+          reason: "I didn't deploy this website due to financial reasons. I currently didn't want to pay for a domain and server space for this website."
+        }
       ]
     },{
       accordionName: "Currently Working On",
@@ -136,16 +147,16 @@ export class Constants{
           ],
           reason: "This project is still early in development."
         },{
-          name: "Pokemon Wiki",
-          description: "Currently, there are 3 main wiki pages for pokemon data, and each of them has a flaw, in my opinion, that makes them disadvantageous to use. The first is lacking a modern UI, the second lacks detailed description of attributes to pokemon, the final one is riddled with white space, you have to scroll down 3 pages just to get to the end of a section.",
-          imgsrc: pokemon,
-          imgalt: "PokemonWiki.png",
-          skills: [
-            "VueTS Frontend",
-            "Tailwind CSS",
-            "LaravelPHP backend"
+          name: "Dice Roller",
+          description: "I recently had the chance to work with the dice company Dice Dungeon. This gave me the idea to make an online dice roller with the ability to have multiple people in a lobby to roll dice together.",
+          skills:[
+            "VueJs",
+            "3JS",
+            "Blender",
+            "ExpressJS",
+            "Websocket communication"
           ],
-          reason: "I am taking time to learn new skills properly, so this might take some time to develop."
+          reason: "I recently started working on this project and am working on learning 3JS and blender"
         }
       ]
     },{
